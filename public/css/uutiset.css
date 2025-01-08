@@ -1,0 +1,133 @@
+header {
+    background: linear-gradient(90deg, #4a90e2, #7b8ce1);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #f4f4f9;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbutton {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbutton:hover, .navbutton:active {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+.navbutton a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.inputarea {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+#sendbutton {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#sendbutton:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+}
+
+#sendbutton:active {
+    background-color: #2b6ea6;
+    transform: translateY(0);
+}
+
+.centeredtext, .centered {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.newsitem {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.newsitem:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.newsitem h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.newsitem p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
