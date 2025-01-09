@@ -4,6 +4,7 @@
     <title>PHP</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/uutiset.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <script>

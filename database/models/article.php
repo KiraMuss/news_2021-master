@@ -1,6 +1,6 @@
 <?php
 require_once "database/connection.php";
- 
+
 function getAllArticles(){
     $pdo =connectDB();
     $sql = "SELECT * FROM articles";
@@ -8,15 +8,15 @@ function getAllArticles(){
     $all = $stm->fetchAll(PDO::FETCH_ASSOC);
     return $all;
 }
- 
-function addArticle($title, $section, $text, $time, $removetime, $userid){
+
+function addArticle($title, $text, $time, $removetime, $userid, $section){
     $pdo =connectDB();
     $data = [$title, $text, $time, $removetime, $userid];
     $sql = "INSERT INTO articles (title, text, created, expirydate, userid) VALUES(?,?,?,?,?)";
     $stm=$pdo->prepare($sql);
     return $stm->execute($data);
 }
- 
+
 function getArticleById($id){
     $pdo = connectDB();
     $sql = "SELECT * FROM articles WHERE articleid=?";
@@ -25,14 +25,14 @@ function getArticleById($id){
     $all = $stm->fetch(PDO::FETCH_ASSOC);
     return $all;
 }
- 
+
 function deleteArticle($id){
     $pdo = connectDB();
     $sql = "DELETE FROM articles WHERE articleid=?";
     $stm=$pdo->prepare($sql);
     return $stm->execute([$id]);
 }
- 
+
 function updateArticle($title, $text, $time, $removetime, $articleid){
     $pdo = connectDB();
     $data = [$title, $text, $time, $removetime, $articleid];

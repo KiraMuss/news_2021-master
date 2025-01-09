@@ -3,7 +3,14 @@ require_once "database/models/article.php";
 require_once 'libraries/cleaners.php';
 
 function viewArticlesController(){
-    $allnews = getAllArticles();
+    $allnews = null;
+    if (isset($_POST['section'])) {
+        $section = cleanUpInput($_POST['section']);
+        $allnews = getSectionArticles($section);
+    }
+    else {
+        $allnews = getAllArticles();
+    }
     require "views/articles.view.php";    
 }
 

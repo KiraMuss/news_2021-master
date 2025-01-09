@@ -1,5 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
-    background: linear-gradient(90deg, #4a90e2, #7b8ce1);
+    background: linear-gradient(90deg, #73a6e0, #4c5ebc);
     color: white;
     text-align: center;
     padding: 20px 0;
